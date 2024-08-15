@@ -1,6 +1,6 @@
 @extends('front.layouts.master')
 @section('title',$article->title)
-@section('bg',$article->image)
+@section('bg',asset($article->image))
 @section('content')
                 <div class="col-md-9 mx-auto">
                     {!! $article->content !!}

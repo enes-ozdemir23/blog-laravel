@@ -5,13 +5,13 @@
             <h2 class="post-title">
                 {{$article->title}}
             </h2>
-            <img src="{{$article->image}} " width="700" height="700"/>
+            <img src="{{asset($article->image)}} " width="600" height="600"/>
             <h3 class="post-subtitle">
-                {!!Str::limit($article->content,75)!!}
+                {!!Str::limit($article->content,50)!!}
             </h3>
         </a>
         <p class="post-meta"> Kategori :
-            <a href="#">{{$article->getCategory->name}}</a>
+            {{$article->getCategory->name}}
             <span class="float-right">{{$article->created_at->diffForHumans()}}</span> </p>
     </div>
     @if(!$loop->last)

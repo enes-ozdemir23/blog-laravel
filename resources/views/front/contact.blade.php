@@ -59,9 +59,9 @@
         </form>
     </div>
     <div class="col-md-4">
-        <div class="card card-default">
-            <div class="card-body">Panel Content</div>
-                 Adres : Elazığ
+        
+            
+                 
     </div>
     </div>
     </div>

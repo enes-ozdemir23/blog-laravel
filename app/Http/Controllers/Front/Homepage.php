@@ -84,13 +84,24 @@ class Homepage extends Controller
             return redirect()->route('contact')->withErrors($validate)->withInput();
         }
 
+        Mail::send([],[],function($message) use($request){
+        $message->from('ilitisim@blogsitesi.com','Blog Sitesi');
+        $message->to('enes@gmail.com');
+        $message->html('Mesajı Gönderen:'.$request->name.'<br/>
+                        Mesajı Gönderen Mail:'.$request->email.'<br/>
+                        Mesaj Konusu:'.$request->topic.'<br/>
+                        Mesaj:'.$request->message.'<br/><br/>
+                        Mesaj Gönderilme Tarihi: '.now().'','text/html');
+        $message->subject($request->name. ' iletişimden mesaj geldi');
+        });
 
-        $contact=new Contact;
-        $contact->name=$request->name;
-        $contact->email=$request->email;
-        $contact->topic=$request->topic;
-        $contact->message=$request->message;
-        $contact->save();
+
+        // $contact=new Contact;
+        // $contact->name=$request->name;
+        // $contact->email=$request->email;
+        // $contact->topic=$request->topic;
+        // $contact->message=$request->message;
+        // $contact->save();
         return redirect()->route('contact')->with('success','Mesajınız Bana iletildi. Teşekkür Ederim');
 
 
@@ -123,13 +134,7 @@ class Homepage extends Controller
 //   Böylece kullanıcılar tekrar doldurmaları gereken alanları hatırlayabilir ve bu, kullanıcı deneyimini iyileştirir.
 // {{old('name')}} fonksiyonuyla hata döndüğünde formdaki veriler silinmez korunur.
 
-//mail trap:
-//Mail::raw('Mesajı Gönderen:'.$request->name.'<br/>'
-//
-//
-//
-//    ,function ($message){
-//        $message->from('ilitisim@blogsitesi.com','Blog Sitesi');
-//        $message->to('enes@gmail.com');
-//        $message->subject($request->name. ' iletişimden mesaj geldi');
+//mailtrap:
+
+
 //    });

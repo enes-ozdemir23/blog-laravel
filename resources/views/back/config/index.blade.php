@@ -43,13 +43,13 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <lavel>Facebook</lavel>
-                                <input type="text" name="facebook" required class="form-control" value="{{$config->facebook}}"/>
+                                <input type="text" name="facebook"  class="form-control" value="{{$config->facebook}}"/>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <lavel>Twitter</lavel>
-                                <input type="text" name="twitter" required class="form-control" value="{{$config->twitter}}"/>
+                                <input type="text" name="twitter"  class="form-control" value="{{$config->twitter}}"/>
                             </div>
                         </div>
                     </div>
@@ -57,13 +57,13 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <lavel>Github</lavel>
-                                <input type="text" name="github" required class="form-control" value="{{$config->github}}"/>
+                                <input type="text" name="github"  class="form-control" value="{{$config->github}}"/>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <lavel>linkedIn</lavel>
-                                <input type="text" name="linkedin" required class="form-control" value="{{$config->linkedin}}"/>
+                                <input type="text" name="linkedin"  class="form-control" value="{{$config->linkedin}}"/>
                             </div>
                         </div>
                     </div>
@@ -71,13 +71,13 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <lavel>Youtube</lavel>
-                                <input type="text" name="youtube" required class="form-control" value="{{$config->youtube}}"/>
+                                <input type="text" name="youtube"  class="form-control" value="{{$config->youtube}}"/>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <lavel>Instagram</lavel>
-                                <input type="text" name="instagram" required class="form-control" value="{{$config->instagram}}"/>
+                                <input type="text" name="instagram"  class="form-control" value="{{$config->instagram}}"/>
                             </div>
                         </div>
                     </div>

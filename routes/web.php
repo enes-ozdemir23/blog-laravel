@@ -71,10 +71,6 @@ Route::get('/{category}/{slug}','App\Http\Controllers\Front\Homepage@single')->n
 Route::get('/{sayfa}','App\Http\Controllers\Front\Homepage@page')->name('page');
 
 
-
-
-
-
 // admin.dashboard 'i category'nin üstüne yazmazsan; ikiside iki parçalı url olduğu için categor'nin 404 hatasını gösterir
 //category üstte olmazsa alttaki single ie kategoriden dolayı karışıyor ve single fonksiyonuna yönlendiriyor.
 //NOT:Sabit verdiğimiz url adreslerini en üstte yazmak gerek. Yani , süslü parantez içinde yazılan url adreslerinin

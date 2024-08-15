@@ -48,8 +48,8 @@
                                         <input class="switch" category-id="{{$category->id}}" type="checkbox" data-on="Aktif" data-onstyle="success" data-off="Pasif" data-offstyle="danger" @if($category->status==1) checked @endif data-toggle="toggle">
                                     </td>
                                     <td>
-                                        <a category-id="{{$category->id}}" class="btn btn-sm btn-primary edit-click" title="Kategori Düzenle"><i class="fa fa-edit text-white" </a>
-                                        <a category-id="{{$category->id}}" category-name="{{$category->name}}" category-count="{{$category->articleCount()}}" class="btn btn-sm btn-danger remove-click" title="Kategoriyi Sil"><i class="fa fa-times text-white" </a>
+                                        <a category-id="{{$category->id}}" class="btn btn-sm btn-primary edit-click" title="Kategori Düzenle">Düzenle<i class="fa fa-edit text-white" </a>
+                                        <a category-id="{{$category->id}}" category-name="{{$category->name}}" category-count="{{$category->articleCount()}}" class="btn btn-sm btn-danger remove-click" title="Kategoriyi Sil">Sil<i class="fa fa-times text-white" </a>
                                     </td>
                                 </tr>
                             @endforeach
